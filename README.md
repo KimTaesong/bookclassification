@@ -16,13 +16,19 @@
   - [파이썬 데이터 분석과 이미지 처리](https://www.youtube.com/watch?v=V8Lpf3WCZ4g&list=PLRx0vPvlEmdBx9X5xSgcEk4CEbzEiws8C)<br>
   - [책공부] Do it 딥러닝 입문 1~3장
 - 회의
+
   - 역할 분담에 관한 논의
   - 프로젝트 방향성에 관한 논의
- 
+
 - 김태송
   - 이화여대 도서관 사진으로 외곽선 검출시도- 객체 인식 잘 되게 하려면 고민이 필요함.
-![books1](https://user-images.githubusercontent.com/48849867/86479224-b6e5c400-bd86-11ea-871a-1924cad8ec84.png)
-<img width="600" alt="result1" src="https://user-images.githubusercontent.com/48849867/86479255-c36a1c80-bd86-11ea-8a38-ae5473081fd3.PNG">
+    ![books1](https://user-images.githubusercontent.com/48849867/86479224-b6e5c400-bd86-11ea-871a-1924cad8ec84.png)
+    <img width="600" alt="result1" src="https://user-images.githubusercontent.com/48849867/86479255-c36a1c80-bd86-11ea-8a38-ae5473081fd3.PNG">
+  - 프로젝트 조언
+    - 1. 책 인식
+    - 2. 책을 세웠을 때 모양 판정
+    - 3. 책이 연달아 있을때 여러개의 책들을 개별적으로 인식할수있는 알고리즘
+    - 4. 사각형들 판정
 
 ---
 

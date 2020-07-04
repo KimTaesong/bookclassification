@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 
 
-src = cv2.imread('opencv/images/namecard1.jpg')
+src = cv2.imread('opencv/images/books1.png')
 
 if src is None:
     print('image load failed')
@@ -64,7 +64,7 @@ for pts in contours:
 cv2.imshow('src', src)
 cv2.imshow('src_gray', src_gray)
 cv2.imshow('src_bin', src_bin)
-cv2.imshow('dst', dst)
+# cv2.imshow('dst', dst)
 
 cv2.waitKey()
 cv2.destroyAllWindows()

@@ -2,14 +2,14 @@ import sys
 import cv2
 
 
-src = cv2.imread('opencv/images/namecard3.jpg')
+src = cv2.imread('opencv/images/books1.png')
 
 if src is None:
     print('image load failed')
     sys.exit()
 
 # src = cv2.resize(src, (640, 480))
-src = cv2.resize(src, (0, 0), fx=0.5, fy=0.5)
+src = cv2.resize(src, (0, 0), fx=1, fy=1)
 
 src_gray = cv2.cvtColor(src, cv2.COLOR_BGR2GRAY)
 
@@ -35,14 +35,14 @@ print(len(contours))
 # 이진화된영상에서  위에 있는 자잘한 것들은 빼줘야 함 - 가장 간단한 방법
 # 모든 외곽선을 검사하는데 면적이 1000보다 작다면
 for pts in contours:
-    if cv2.contourArea(pts) < 1000:
-        continue
+    # if cv2.contourArea(pts) < 10:
+    #     continue
 
     approx = cv2.approxPolyDP(pts, cv2.arcLength(pts, True)*0.02, True)
 
-    # 사각형 형태로 근사화 되지 않으면 무시
-    if len(approx) != 4:
-        continue
+    # # 사각형 형태로 근사화 되지 않으면 무시
+    # if len(approx) != 4:
+    #     continue
 
     cv2.polylines(src, pts, True, (0, 0, 255))
 

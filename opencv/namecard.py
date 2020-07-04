@@ -2,14 +2,14 @@ import sys
 import cv2
 
 
-src = cv2.imread('opencv/images/namecard3.jpg')
+src = cv2.imread('opencv/images/books1.png')
 
 if src is None:
     print('image load failed')
     sys.exit()
 
 # src = cv2.resize(src, (640, 480))
-src = cv2.resize(src, (0, 0), fx=0.5, fy=0.5)
+src = cv2.resize(src, (0, 0), fx=2, fy=2)
 
 src_gray = cv2.cvtColor(src, cv2.COLOR_BGR2GRAY)
 
